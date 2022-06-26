@@ -6,4 +6,4 @@ zfs-import-snapshot \
 find /rpool/text/ -name "secret_message" \
 В листенге не стал переделывать нашел по другому. Было интересно что лежит в снапшете.
 
-![Файл команд]()
+![Файл команд](https://github.com/vedoff/OTUS-ALP-zfs/blob/master/zfs-work)
