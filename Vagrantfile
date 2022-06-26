@@ -55,8 +55,8 @@ Vagrant.configure("2") do |config|
                end
   
             box.vm.provider :virtualbox do |vb|
-                    vb.customize ["modifyvm", :id, "--memory", "1024"]
-                    needsController = false
+                vb.customize ["modifyvm", :id, "--memory", "1024"]
+                needsController = false
             boxconfig[:disks].each do |dname, dconf|
                 unless File.exist?(dconf[:dfile])
                   vb.customize ['createhd', '--filename', dconf[:dfile], '--variant', 'Fixed', '--size', dconf[:size]]
